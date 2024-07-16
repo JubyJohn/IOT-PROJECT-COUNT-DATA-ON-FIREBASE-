@@ -51,7 +51,8 @@ To create a Firebase project with a realtime database and to store the count of 
         <br>  - Board: NodeMCU 1.0( ESP - 12E  Module)
         <br>  - Finish
 
-        ![VS Code](https://github.com/user-attachments/assets/a87be81d-11bf-41d3-98eb-79828b494a36) 
+  ![VS Code](https://github.com/user-attachments/assets/a87be81d-11bf-41d3-98eb-79828b494a36) 
+        
 <br> -> On platformio.ini , enter the library file on lib_deps
 <br> -> On left bar, click on src and open main.cpp. Here you can enter the program.
 
