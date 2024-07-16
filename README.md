@@ -47,7 +47,7 @@ To create a Firebase project with a realtime database and to store the count of 
 #### 2.Create a New Project
 
 <br> -> Open VS code, on left bar click on platform.io then click on open and on right side
-        <br>  - Project Name
+        <br> /> - Project Name
         <br>  - Board: NodeMCU 1.0( ESP - 12E  Module)
         <br>  - Finish
 <br> -> On platformio.ini , enter the library file on lib_deps
