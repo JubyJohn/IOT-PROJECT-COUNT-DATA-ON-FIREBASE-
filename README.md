@@ -78,12 +78,12 @@ To create a Firebase project with a realtime database and to store the count of 
     FirebaseData fbdo;
     FirebaseAuth auth;
     FirebaseConfig config;
-/*************************/
+/*****************************************************************************/
 
     int count = 0 ;
     String msg; 
     
-/*************************/
+/*****************************************************************************/
     void Connect_WiFi();
     void Firebase_Store(String PATH,String MSG);
     String Firebase_getString(String PATH);
@@ -94,7 +94,7 @@ To create a Firebase project with a realtime database and to store the count of 
          Connect_WiFi(); 
          pinMode(D2,INPUT);
     }
-/*************************/
+/****************************************************************************/
     void loop()
     {
       int k;
@@ -108,7 +108,7 @@ To create a Firebase project with a realtime database and to store the count of 
 
     }
 
-/*************************/
+/****************************************************************************** /
     void Connect_WiFi()
     {
           Serial.begin(9600);
@@ -142,7 +142,7 @@ To create a Firebase project with a realtime database and to store the count of 
           Firebase.setDoubleDigits(5);
           config.timeout.serverResponse = 10 * 1000;
     }
-/*************************/
+/*****************************************************************************/
     void Firebase_Store(String PATH,String MSG)
     {
           Serial.print("Uploading data \" ");
@@ -153,14 +153,14 @@ To create a Firebase project with a realtime database and to store the count of 
           Firebase.RTDB.setString(&fbdo, PATH, MSG);
           delay(50);
     }
-/*************************/
+/*************************************************************************/
     String Firebase_getString(String PATH)
     {
       String msg = (Firebase.RTDB.getString(&fbdo, PATH) ? fbdo.to<const char *>() : fbdo.errorReason().c_str());
       delay(50);
       return msg;
     }
-/*************************/
+/ *****************************************************************************/
     int key()
     {
       int x=0;
