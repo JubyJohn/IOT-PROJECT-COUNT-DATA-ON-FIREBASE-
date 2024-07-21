@@ -61,7 +61,7 @@ To create a Firebase project with a realtime database and to store the count of 
 
 ### CODE WITHOUT USING INBUILD FUNCTION
 
-~~~#if defined(ESP32)
+~~~ #if defined(ESP32)
     #include <WiFi.h>
     #elif defined(ESP8266)
     #include <ESP8266WiFi.h>
@@ -225,7 +225,9 @@ To create a Firebase project with a realtime database and to store the count of 
         }
         Serial.println(msg);
         Firebase_Store("/test/count",msg);
-    }~~~
+    }
+~~~
+
 
 ## OUTPUT
 
