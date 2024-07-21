@@ -100,7 +100,6 @@ To create a Firebase project with a realtime database and to store the count of 
         Serial.println(count);
         uploadVal(count);
       }
-
     }
     void Connect_WiFi()
     {
